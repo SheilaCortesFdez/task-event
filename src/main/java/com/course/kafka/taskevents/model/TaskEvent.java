@@ -1,4 +1,8 @@
 package com.course.kafka.taskevents.model;
 
-public class TaskEvent {
+public record TaskEvent(
+        TaskEventType eventType,
+        Long taskId,
+        String title
+) {
 }
